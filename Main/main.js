@@ -52,20 +52,20 @@ $("#shopify-section-template--15158492954803__1639368589aa6d1149 h3 a").mouseout
 
 // product sixth
 
-$(".ps-b2").click(function () {
-    $(".p-section-1").animate({ right: '100%' }, 700)
-    $(".p-section-2").animate({ right: '100%' }, 700)
-    $(".p-section-3").animate({ right: '100%' }, 700)
-    $(".ps-b1").css({ "opacity": "1" })
-    $("#ps-btn").animate({ padding: "0px 10px 0x 40px", top: "210px" }, 700)
-})
-$(".ps-b1").click(function () {
-    $(".p-section-3").animate({ right: '0%' }, 700)
-    $(".p-section-1").animate({ right: '0%' }, 700)
-    $(".p-section-2").animate({ right: '0%' }, 700)
-    $(".ps-b1").css({ "opacity": "0" })
-    $("#ps-btn").animate({ padding: "0px 13px 0x 40px", top: "190px" }, 700)
-})
+// $(".ps-b2").click(function () {
+//     $(".p-section-1").animate({ right: '100%' }, 700)
+//     $(".p-section-2").animate({ right: '100%' }, 700)
+//     $(".p-section-3").animate({ right: '100%' }, 700)
+//     $(".ps-b1").css({ "opacity": "1" })
+//     $("#ps-btn").animate({ padding: "0px 10px 0x 40px", top: "210px" }, 700)
+// })
+// $(".ps-b1").click(function () {
+//     $(".p-section-3").animate({ right: '0%' }, 700)
+//     $(".p-section-1").animate({ right: '0%' }, 700)
+//     $(".p-section-2").animate({ right: '0%' }, 700)
+//     $(".ps-b1").css({ "opacity": "0" })
+//     $("#ps-btn").animate({ padding: "0px 13px 0x 40px", top: "190px" }, 700)
+// })
 
 
 $(".btns button").click(function () {
@@ -74,85 +74,143 @@ $(".btns button").click(function () {
 
 
 
+  
 
-$("#shop-inner>li>a").hover(function () {
-    // })
-    $(".active").removeClass("active")
-    $(".active-in").removeClass("active-in")
-})
+           $("#shop-inner>li>a").hover(function () {
 
-
-
-$("#shop-inner>.f-1>a").hover(function () {
-    $(this).addClass("active")
-})
-$("#shop-inner>.f-2>a").hover(function () {
-    $(this).addClass("active")
-})
-$("#shop-inner>.f-3>a").hover(function () {
-    $(this).addClass("active")
-})
-$("#shop-inner>.f-4>a").hover(function () {
-    $(this).addClass("active")
-})
-$("#shop-inner>.f-5>a").hover(function () {
-    $(this).addClass("active")
-})
-$("#shop-inner>.f-6>a").hover(function () {
-    $(this).addClass("active")
-})
-$("#shop-inner>.f-7>a").hover(function () {
-    $(this).addClass("active")
-})
-$("#shop-inner>.f-8>a").hover(function () {
-    $(this).addClass("active")
-})
+            $(".active").removeClass("active")
+            $(".active-in").removeClass("active-in")
+        })
 
 
+        $("#shop-inner>.f-1>a").hover(function () {
+            $(this).addClass("active")
+        })
+        $("#shop-inner>.f-2>a").hover(function () {
+            $(this).addClass("active")
+        })
+        $("#shop-inner>.f-3>a").hover(function () {
+            $(this).addClass("active")
+        })
+        $("#shop-inner>.f-4>a").hover(function () {
+            $(this).addClass("active")
+        })
+        $("#shop-inner>.f-5>a").hover(function () {
+            $(this).addClass("active")
+        })
+        $("#shop-inner>.f-6>a").hover(function () {
+            $(this).addClass("active")
+        })
+        $("#shop-inner>.f-7>a").hover(function () {
+            $(this).addClass("active")
+        })
+        $("#shop-inner>.f-8>a").hover(function () {
+            $(this).addClass("active")
+        })
 
 
-$("#shop-inner>.f-1").hover(function () {
-    $("#shop>.f-1-inner").addClass("active-in")
+
+        $("#shop-inner>.f-1").hover(function () {
+            $("#shop>.f-1-inner").addClass("active-in")
+        })
+
+        $("#shop-inner>.f-2").hover(function () {
+            $("#shop>.f-2-inner").addClass("active-in")
+        })
+
+        $("#shop-inner>.f-3").hover(function () {
+            $("#shop>.f-3-inner").addClass("active-in")
+        })
+
+        $("#shop-inner>.f-4").hover(function () {
+            $("#shop>.f-4-inner").addClass("active-in")
+        })
+
+        $("#shop-inner>.f-5").hover(function () {
+            $("#shop>.f-5-inner").addClass("active-in")
+        })
+
+        $("#shop-inner>.f-6").hover(function () {
+            $("#shop>.f-6-inner").addClass("active-in")
+        })
+
+        $("#shop-inner>.f-7").hover(function () {
+            $("#shop>.f-7-inner").addClass("active-in")
+        })
+
+        $("#shop-inner>.f-8").hover(function () {
+            $("#shop>.f-8-inner").addClass("active-in")
+        })
+
+      
+
+
+
+
+function myFunction(x) {
+    if (x.matches) {
+
+
+        
+    }
+    else{
+
+    }
+}
+
+var x = window.matchMedia("(max-width: 600px)")
+myFunction(x)
+x.addListener(myFunction)
+
+
+
+
+$("#shop .f-7-inner #tool").hover(function () {
+    $("#shop .f-7-inner #tool .wrench-f").css({ "z-index": "10;" })
+    $("#shop .f-7-inner #tool .wrench-s").css({ "z-index": "0;" })
 })
 
-$("#shop-inner>.f-2").hover(function () {
-    $("#shop>.f-2-inner").addClass("active-in")
-})
-
-$("#shop-inner>.f-3").hover(function () {
-    $("#shop>.f-3-inner").addClass("active-in")
-})
-
-$("#shop-inner>.f-4").hover(function () {
-    $("#shop>.f-4-inner").addClass("active-in")
-})
-
-$("#shop-inner>.f-5").hover(function () {
-    $("#shop>.f-5-inner").addClass("active-in")
-})
-
-$("#shop-inner>.f-6").hover(function () {
-    $("#shop>.f-6-inner").addClass("active-in")
-})
-
-$("#shop-inner>.f-7").hover(function () {
-    $("#shop>.f-7-inner").addClass("active-in")
-})
-
-$("#shop-inner>.f-8").hover(function () {
-    $("#shop>.f-8-inner").addClass("active-in")
-})
-
-
-$("#shop .f-7-inner #tool").hover(function(){
-    $("#shop .f-7-inner #tool .wrench-f").css({"z-index":"10;"})
-    $("#shop .f-7-inner #tool .wrench-s").css({"z-index":"0;"})
-})
-
-$(".f-s-1,.f-s-2,.f-s-3").click(function(){
-    $(this).toggleClass("collapse-div",function(){
-        $(".f-s-1 i,.f-s-2 i,.f-s-3 i,").animate({"rotate":"180deg"},500)
-    }) 
+$(".f-s-1,.f-s-2,.f-s-3").click(function () {
+    $(this).toggleClass("collapse-div", function () {
+        $(".f-s-1 i,.f-s-2 i,.f-s-3 i,").animate({ "rotate": "180deg" }, 500)
+    })
     $(this).toggleClass("collapse-rev")
 })
 
+
+
+$("#o-c .bottom-bor i").click(function () {
+    $("#o-c").addClass("close")
+    $("#o-c").removeClass("responsive")
+    $(".nav-menu").addclass("c-u")
+})
+
+$(".large-up--hide").click(function () {
+    $("#o-c").addClass("responsive")
+    $("#o-c").removeClass("close")
+    $(".nav-menu").addclass("c-u")
+    $(html).css({ "overflow": "hidden" })
+})
+
+
+
+$(".one i").click(function () {
+    $(".one i").toggleClass("fa-solid fa-xmark")
+    $(".one i").toggleClass("fa-solid fa-angle-down")
+})
+$(".two i").click(function () {
+    $(".two i").toggleClass("fa-solid fa-xmark")
+    $(".two i").toggleClass("fa-solid fa-angle-down")
+})
+$(".three i").click(function () {
+    $(".three i").toggleClass("fa-solid fa-xmark")
+    $(".three i").toggleClass("fa-solid fa-angle-down")
+})
+$(".forth i").click(function () {
+    $(".forth i").toggleClass("fa-solid fa-xmark")
+    $(".forth i").toggleClass("fa-solid fa-angle-down")
+})
+$(".fifth i").click(function () {
+    $(".fifth i").toggleClass("fa-solid fa-xmark")
+    $(".fifth i").toggleClass("fa-solid fa-angle-down")
+})

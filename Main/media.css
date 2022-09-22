@@ -2,6 +2,18 @@
     .shipping-right {
         padding-right: 15% !important;
     }
+    .close
+    {
+        display: none !important;
+    }
+    #shop 
+    {
+        left: 38% !important;
+    }
+    #o-c.nav-menu.close
+    {
+        display: none !important;
+    }
 
     .slide-list {
         top: 7% !important;
@@ -124,7 +136,7 @@
     .after-slider {
         top: 24.5% !important;
     }
-
+    
     #load-line {
         top: 20.5% !important;
     }
@@ -1418,6 +1430,11 @@
         width: 75% !important;
     }
 
+    .close 
+    {
+        display: flex !important;
+    }
+
     .cookies {
         padding: 25px !important;
         column-gap: 5% !important;
@@ -1733,6 +1750,11 @@
 
     .nav-menu {
         display: none;
+    }
+
+    .shop-inner:hover
+    {
+        display: none !important;
     }
 
     .animation-cropper {

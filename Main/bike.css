@@ -116,6 +116,143 @@ body
 
 }
 
+
+
+
+
+#o-c.close 
+{
+    animation: to-right forwards .5s !important;
+}
+@keyframes to-right {
+    0%
+    {
+        transform: translateX(62%);
+    }
+    100%
+    {
+        transform: translateX(165%);
+    }
+}
+
+.responsive.nav-inner
+{
+    animation: from-right forwards .5s;
+}
+
+@keyframes from-right {
+    0%
+    {
+        transform: translateX(165%);
+    }
+    100%
+    {
+        transform: translateX(62%);
+    }
+}
+
+.c-u
+{
+    animation: forwards come-up 1s;
+}
+@keyframes come-up {
+    0%
+    {
+        transform: translateY(25px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+#o-c.nav-inner {
+    height: 100vh !important;
+    width: 61.8% !important;
+    top: 0% !important;
+    display: flex;
+    float: right !important;
+    z-index: 10000 !important;
+    background-color: #fff;
+    flex-direction: column !important;
+    position: fixed;
+}
+
+#o-c .bottom-bor 
+{
+    padding: 0px 40px 0px 40px !important;
+}
+#o-c .bottom-bor i 
+{
+    cursor: pointer;
+}
+#o-c .login
+{
+    padding-top: 20px !important;
+}
+#o-c .login a
+{
+    color: #697082 !important;
+    font-size: 25px;
+}
+#o-c .login a:hover 
+{
+    color: #697082 !important;
+}
+#o-c .nav-item .title 
+{
+    color: #697082 !important;
+}
+#o-c .nav-item .title:hover
+{
+    color: #697082 !important;
+}
+#o-c .bottom-bor div
+{
+    height: 95px !important;
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    border-bottom: #e8e8e1 solid 1px ;
+}
+#o-c #navigation
+{
+    height: fit-content !important;
+    width: 100% !important;
+    padding: 20px 40px 0px 40px;
+    display: block !important;
+    overflow: auto !important;
+}
+#o-c .navigation-menu
+{
+    margin: 0px !important;
+}
+#o-c .navigation-menu .nav-item
+{
+    margin: 0px !important;
+    padding: 15px 15px 15px 0px !important;
+    color: #64697d !important;
+    display: block !important;
+}
+#o-c .navigation-menu .nav-item .title
+{
+    text-transform: capitalize !important;
+    font-size: 25px !important;
+    display: inline-block !important;
+    width: 90% !important;
+}
+#o-c .navigation-menu .nav-item i
+{
+    margin-top: 10px !important;
+    float: right !important;
+}
+
+
+
+
+
+
+
 .before-nav {
     background-color: #58667d;
     padding: 10px 0 10px 15%;
