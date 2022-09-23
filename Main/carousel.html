@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- product slider links css & jquery -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="theme.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+
+    <style>
+        :root {
+            --typeHeaderPrimary: 'GoodTimes';
+            --typeHeaderFallback: sans-serif;
+            --typeHeaderSize: 32px;
+            --typeHeaderWeight: 400;
+            --typeHeaderLineHeight: 1.3;
+            --typeHeaderSpacing: 0.0em;
+            --typeBasePrimary: 'Candara';
+            --typeBaseFallback: sans-serif;
+            --typeBaseSize: 18px;
+            --typeBaseWeight: 400;
+            --typeBaseLineHeight: 1.5;
+            --typeBaseSpacing: 0.025em;
+            --iconWeight: 3px;
+            --iconLinecaps: miter;
+        }
+
+        .carousel-cell img:nth-child(1)
+        {
+            opacity: 0;
+            position: absolute;
+        }
+        .carousel-cell img:nth-child(2)
+        {
+            opacity: 1;
+        }
+
+        .carousel-cell:hover img:nth-child(1)
+        {
+            transition: .5s;
+            opacity: 1;
+        }
+        .carousel-cell:hover img:nth-child(2)
+        {
+            opacity: 0;
+            transition: .5s;
+        }
+       
+        * {
+            font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback) !important;
+        }
+
+        .carousel-cell:hover {
+            cursor: pointer !important;
+        }
+
+        .carousel-cell {
+            width: 250px;
+        }
+
+        .flickity-page-dots {
+            position: absolute;
+            width: 100%;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            display: none !important;
+            bottom: -25px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+            line-height: 1;
+        }
+
+        .main-carousel {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute !important;
+            width: 80%;
+            margin: auto;
+        }
+
+        .grid-product__meta {
+            width: 85%;
+            margin: auto !important;
+            text-align: left !important;
+        }
+
+        .flickity-button:hover {
+            background-color: #a76b36 !important;
+        }
+
+        .grid-product__meta div {
+            font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback) !important;
+        }
+
+        .orange-btn {
+            float: right;
+            top: 5%;
+            right: 25.5%;
+            position: absolute;
+            z-index: 100;
+        }
+
+        .orange-btn button {
+            font-size: smaller;
+            color: #fff !important;
+            position: absolute;
+            z-index: 1;
+            transition: .1s;
+            background-color: #f7942b;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transform: translateY(10px);
+            opacity: 0;
+        }
+
+        .orange-btn button:hover {
+            transform: scale(1.1) !important;
+        }
+
+        .carousel-cell:hover .orange-btn button {
+            transition: .05;
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        .carousel-cell:hover .grid-product__meta
+        {
+            color: #f7942b !important;
+        }
+        .carousel-cell:hover #save-tag {
+        opacity: 0 !important;
+        }
+        #save-tag {
+        color: White;
+        z-index: 1000;
+        padding: 3px 10px;
+        font-size: small;
+        right: 4%;
+        top: 5%;
+        opacity: 1 !important;
+        letter-spacing: 2px;
+        position: absolute;
+        text-transform: uppercase;
+        background-color: #e20000;
+    }
+    
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <!-- <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell">
+            <img src="img/p22.webp" alt="">
+            <img src="img/p2.webp" alt="">
+            <div class="grid-product__meta">
+                <div class="grid-product__title">Deore XT M786 Rear Derailleur</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span class="visually-hidden">Regular price</span>
+                    <span class="grid-product__price--original">$103.99</span>
+                    <span class="visually-hidden">Sale price</span><span class="sale-price">
+                        $89.99
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="img/p22.webp" alt="">
+            <img src="img/p2.webp" alt="">
+            <div class="grid-product__meta">
+                <div class="grid-product__title">Deore XT M786 Rear Derailleur</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span class="visually-hidden">Regular price</span>
+                    <span class="grid-product__price--original">$103.99</span>
+                    <span class="visually-hidden">Sale price</span><span class="sale-price">
+                        $89.99
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="img/p22.webp" alt="">
+            <img src="img/p2.webp" alt="">
+            <div class="grid-product__meta">
+                <div class="grid-product__title">Deore XT M786 Rear Derailleur</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span class="visually-hidden">Regular price</span>
+                    <span class="grid-product__price--original">$103.99</span>
+                    <span class="visually-hidden">Sale price</span><span class="sale-price">
+                        $89.99
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="main-carousel"
+        data-flickity='{"groupCell":"true","groupAlign":"center","contain":"true","groupCells":"100%"}'>
+
+
+
+        <div class="carousel-cell">
+            <img src="img/p1.webp" alt="">
+            <img src="img/p1.webp" alt="">
+            <a class="orange-btn" href="#">
+                <button>Quick View</button>
+            </a>
+            <div class="grid-product__meta">
+                <div class="grid-product__title">B05S-RX Disc Brake Pads - Resin/Steel</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span>
+                        $9.99
+                    </span></div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="img/p22.webp" alt="">
+            <img src="img/p2.webp" alt="">
+            <a class="orange-btn" href="#">
+                <button>Quick View</button>
+            </a>
+            <div class="grid-product__meta">
+                <div class="grid-product__title">SLX SL-M7100 Shift Lever</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span>
+                        $40.99
+                    </span></div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="img/p33.webp" alt="">
+            <img src="img/p3.webp" alt="">
+            <a class="orange-btn" href="#">
+                <button>Quick View</button>
+            </a>
+            <div class="grid-product__meta">
+                <div class="grid-product__title">Deore XT SL-M8100 Shift Lever</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span>
+                        $62.99
+                    </span></div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="img/p44.webp" alt="">
+            <img src="img/p4.webp" alt="">
+            <div class="save" id="save-tag">Save $9</div>
+            <a class="orange-btn" href="#">
+                <button>Quick View</button>
+            </a>
+            <div class="grid-product__meta">
+                <div class="grid-product__title">Ultra Sport III Tire</div>
+                <div class="grid-product__vendor">Continental</div>
+                <div class="grid-product__price"><span class="visually-hidden">Regular price</span>
+                    <span class="grid-product__price--original">$32.95</span>
+                    <span class="visually-hidden">Sale price</span><span class="sale-price">
+                        from $23.95
+                    </span>
+                </div>
+                <div
+                    style=" margin-top: 10px; padding: 2px; border: rgba(115, 114, 114, 0.165) solid 1px; width: min-content;">
+                    <div style="background-color: black; padding: 7px; margin:0px auto; width: 1px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="img/p55.webp" alt="">
+            <img src="img/p5.webp" alt="">
+            <a class="orange-btn" href="#">
+                <button>Quick View</button>
+            </a>
+            <div class="grid-product__meta">
+                <div class="grid-product__title">Deore XT M786 Rear Derailleur</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span class="visually-hidden">Regular price</span>
+                    <span class="grid-product__price--original">$103.99</span>
+                    <span class="visually-hidden">Sale price</span><span class="sale-price">
+                        $89.99
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="img/p66.webp" alt="">
+            <img src="img/p6.webp" alt="">
+            <a class="orange-btn" href="#">
+                <button>Quick View</button>
+            </a>
+            <div class="grid-product__meta">
+                <div class="grid-product__title">Deore XT M786 Rear Derailleur</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span class="visually-hidden">Regular price</span>
+                    <span class="grid-product__price--original">$103.99</span>
+                    <span class="visually-hidden">Sale price</span><span class="sale-price">
+                        $89.99
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="img/p77.webp" alt="">
+            <img src="img/p7.webp" alt="">
+            <a class="orange-btn" href="#">
+                <button>Quick View</button>
+            </a>
+            <div class="grid-product__meta">
+                <div class="grid-product__title">Deore XT M786 Rear Derailleur</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span class="visually-hidden">Regular price</span>
+                    <span class="grid-product__price--original">$103.99</span>
+                    <span class="visually-hidden">Sale price</span><span class="sale-price">
+                        $89.99
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="img/p8.webp" alt="">
+            <img src="img/p8.webp" alt="">
+            <a class="orange-btn" href="#">
+                <button>Quick View</button>
+            </a>
+            <div class="grid-product__meta">
+                <div class="grid-product__title">Deore XT M786 Rear Derailleur</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span class="visually-hidden">Regular price</span>
+                    <span class="grid-product__price--original">$103.99</span>
+                    <span class="visually-hidden">Sale price</span><span class="sale-price">
+                        $89.99
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="img/p9.webp" alt="">
+            <img src="img/p9.webp" alt="">
+            <a class="orange-btn" href="#">
+                <button>Quick View</button>
+            </a>
+            <div class="grid-product__meta">
+                <div class="grid-product__title">Deore XT M786 Rear Derailleur</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span class="visually-hidden">Regular price</span>
+                    <span class="grid-product__price--original">$103.99</span>
+                    <span class="visually-hidden">Sale price</span><span class="sale-price">
+                        $89.99
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="img/p10.webp" alt="">
+            <img src="img/p10.webp" alt="">
+            <a class="orange-btn" href="#">
+                <button>Quick View</button>
+            </a>
+            <div class="grid-product__meta">
+                <div class="grid-product__title">Deore XT M786 Rear Derailleur</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span class="visually-hidden">Regular price</span>
+                    <span class="grid-product__price--original">$103.99</span>
+                    <span class="visually-hidden">Sale price</span><span class="sale-price">
+                        $89.99
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="img/p111.webp" alt="">
+            <img src="img/p11.webp" alt="">
+            <a class="orange-btn" href="#">
+                <button>Quick View</button>
+            </a>
+            <div class="grid-product__meta">
+                <div class="grid-product__title">Deore XT M786 Rear Derailleur</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span class="visually-hidden">Regular price</span>
+                    <span class="grid-product__price--original">$103.99</span>
+                    <span class="visually-hidden">Sale price</span><span class="sale-price">
+                        $89.99
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="img/p12.webp" alt="">
+            <img src="img/p12.webp" alt="">
+            <a class="orange-btn" href="#">
+                <button>Quick View</button>
+            </a>
+            <div class="grid-product__meta">
+                <div class="grid-product__title">Deore XT M786 Rear Derailleur</div>
+                <div class="grid-product__vendor">Shimano</div>
+                <div class="grid-product__price"><span class="visually-hidden">Regular price</span>
+                    <span class="grid-product__price--original">$103.99</span>
+                    <span class="visually-hidden">Sale price</span><span class="sale-price">
+                        $89.99
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+<script src="carousel.js"></script>
+
+</html>

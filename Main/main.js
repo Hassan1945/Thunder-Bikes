@@ -52,20 +52,7 @@ $("#shopify-section-template--15158492954803__1639368589aa6d1149 h3 a").mouseout
 
 // product sixth
 
-// $(".ps-b2").click(function () {
-//     $(".p-section-1").animate({ right: '100%' }, 700)
-//     $(".p-section-2").animate({ right: '100%' }, 700)
-//     $(".p-section-3").animate({ right: '100%' }, 700)
-//     $(".ps-b1").css({ "opacity": "1" })
-//     $("#ps-btn").animate({ padding: "0px 10px 0x 40px", top: "210px" }, 700)
-// })
-// $(".ps-b1").click(function () {
-//     $(".p-section-3").animate({ right: '0%' }, 700)
-//     $(".p-section-1").animate({ right: '0%' }, 700)
-//     $(".p-section-2").animate({ right: '0%' }, 700)
-//     $(".ps-b1").css({ "opacity": "0" })
-//     $("#ps-btn").animate({ padding: "0px 13px 0x 40px", top: "190px" }, 700)
-// })
+
 
 
 $(".btns button").click(function () {

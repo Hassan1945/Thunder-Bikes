@@ -15,6 +15,8 @@
         display: none !important;
     }
 
+    
+   
     .slide-list {
         top: 7% !important;
     }
@@ -70,7 +72,18 @@
     }
 
     .products {
+        margin-top: 70px !important;
         top: 15.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center !important;
+    }
+
+    .products iframe 
+    {
+        margin-bottom: 40px !important;
+        height: 420px;
     }
 
     .location {
@@ -275,9 +288,6 @@
         top: 31% !important;
     }
 
-    .products .product {
-        padding-bottom: 120px !important;
-    }
 
     .location {
         top: 32% !important;
@@ -961,35 +971,7 @@
         width: 100% !important;
     }
 
-    .product .p-section-1,
-    .product .p-section-2,
-    .product .p-section-3 {
-        margin-top: 0px !important;
-        margin-right: 110px !important;
-    }
-
-    .product .p-section-1 img,
-    .product .p-section-2 img,
-    .product .p-section-3 img {
-        padding-bottom: 40px !important;
-        width: 260px !important;
-    }
-
-    .product .p-section-1 .p-img,
-    .product .p-section-2 .p-img,
-    .product .p-section-3 .p-img {
-        margin: 0px !important;
-        height: 275px !important;
-        width: 265px !important;
-    }
-
-    .product .p-section-1 .grid-product__meta,
-    .product .p-section-2 .grid-product__meta,
-    .product .p-section-3 .grid-product__meta {
-        height: 90px !important;
-        width: 270px !important;
-    }
-
+   
     .location {
         top: 70% !important;
     }
@@ -1137,37 +1119,12 @@
     }
 
     .products {
-        margin: 0px !important;
+        margin-top: 40px !important;
         top: 77% !important;
         width: 100% !important;
     }
 
-    .product .p-section-1,
-    .product .p-section-2,
-    .product .p-section-3 {
-        margin-top: 0px !important;
-        margin-right: 250px !important;
-    }
-
-    .product .p-section-1 img,
-    .product .p-section-2 img,
-    .product .p-section-3 img {
-        padding-bottom: 20px !important;
-        width: 230px !important;
-    }
-
-    .product .p-section-1 .p-img,
-    .product .p-section-2 .p-img,
-    .product .p-section-3 .p-img {
-        width: 235px !important;
-        margin: 0px !important;
-    }
-
-    .product .p-section-1 .grid-product__meta,
-    .product .p-section-2 .grid-product__meta,
-    .product .p-section-3 .grid-product__meta {
-        width: 90% !important;
-    }
+   
 
     .location {
         top: 75% !important;
@@ -1342,34 +1299,7 @@
         width: 100% !important;
     }
 
-    .product .p-section-1,
-    .product .p-section-2,
-    .product .p-section-3 {
-        margin-top: 0px !important;
-        margin-right: 430px !important;
-    }
-
-    .product .p-section-1 img,
-    .product .p-section-2 img,
-    .product .p-section-3 img {
-        padding-bottom: 0px !important;
-        width: 200px !important;
-    }
-
-    .product .p-section-1 .p-img,
-    .product .p-section-2 .p-img,
-    .product .p-section-3 .p-img {
-        height: 190px !important;
-        width: 190px !important;
-        margin: 0px !important;
-    }
-
-    .product .p-section-1 .grid-product__meta,
-    .product .p-section-2 .grid-product__meta,
-    .product .p-section-3 .grid-product__meta {
-        margin: auto !important;
-        width: 90% !important;
-    }
+    
 
     .location {
         height: 510px !important;
@@ -1586,40 +1516,7 @@
         width: 100% !important;
     }
 
-    .products .product {
-        padding-bottom: 65px !important;
-    }
 
-    .product .p-section-1,
-    .product .p-section-2,
-    .product .p-section-3 {
-        margin-top: 20px !important;
-        margin-right: 40px !important;
-        width: 688px !important;
-    }
-
-    .product .p-section-1 img,
-    .product .p-section-2 img,
-    .product .p-section-3 img {
-        padding-bottom: 40px !important;
-        padding-top: 10px;
-        width: 160px !important;
-    }
-
-    .product .p-section-1 .p-img,
-    .product .p-section-2 .p-img,
-    .product .p-section-3 .p-img {
-        margin: 0px !important;
-        height: 175px !important;
-        width: 165px !important;
-    }
-
-    .product .p-section-1 .grid-product__meta,
-    .product .p-section-2 .grid-product__meta,
-    .product .p-section-3 .grid-product__meta {
-        height: 150px !important;
-        width: 150px !important;
-    }
 
     .location {
         top: 145% !important;
@@ -1895,44 +1792,6 @@
         width: 100% !important;
     }
 
-    .products .product {
-        padding-bottom: 65px !important;
-    }
-
-    .products #ps-btn {
-        top: 180px !important;
-    }
-
-    .product .p-section-1,
-    .product .p-section-2,
-    .product .p-section-3 {
-        margin-top: 0px !important;
-        margin-right: 650px !important;
-        width: 620px !important;
-    }
-
-    .product .p-section-1 img,
-    .product .p-section-2 img,
-    .product .p-section-3 img {
-        padding-bottom: 60px !important;
-        padding-top: 0px !important;
-        width: 140px !important;
-    }
-
-    .product .p-section-1 .p-img,
-    .product .p-section-2 .p-img,
-    .product .p-section-3 .p-img {
-        margin: 0px !important;
-        height: 150px !important;
-        width: 140px !important;
-    }
-
-    .product .p-section-1 .grid-product__meta,
-    .product .p-section-2 .grid-product__meta,
-    .product .p-section-3 .grid-product__meta {
-        height: 150px !important;
-        width: 120px !important;
-    }
 
     .location {
         top: 170% !important;
@@ -2170,64 +2029,6 @@
         width: 100% !important;
     }
 
-    .products .product {
-        padding-bottom: 65px !important;
-    }
-
-    .products #ps-btn {
-        top: 180px !important;
-    }
-
-    .product .p-section-1,
-    .product .p-section-2,
-    .product .p-section-3 {
-        margin-top: 0px !important;
-        margin-right: 650px !important;
-        width: 100% !important;
-    }
-
-    .product .p-section-1 #p-img2
-    {
-        margin-right: 50px !important;
-    }
-
-    .product .p-section-1 img,
-    .product .p-section-2 img,
-    .product .p-section-3 img {
-        padding-bottom: 60px !important;
-        padding-top: 0px !important;
-        width: 200px !important;
-    }
-
-    .product .p-section-1 .p-img,
-    .product .p-section-2 .p-img,
-    .product .p-section-3 .p-img {
-        margin: 0px !important;
-        height: 190px !important;
-        width: 235px !important;
-    }
-
-    .p1:hover .orange-btn button,
-    .p2:hover .orange-btn button,
-    .p3:hover .orange-btn button,
-    .p4:hover .orange-btn button {
-        transition: none !important;
-        opacity: 0 !important;
-        transform: none !important;
-    }
-
-    .products #save-tag {
-        left: 1200px !important;
-        right: 0px !important;
-    }
-
-    .product .p-section-1 .grid-product__meta,
-    .product .p-section-2 .grid-product__meta,
-    .product .p-section-3 .grid-product__meta {
-        height: 150px !important;
-        width: 200px !important;
-        margin: 0px !important;
-    }
 
     .location
     {
@@ -2662,56 +2463,7 @@
         top: 195% !important;
     }
 
-    .products .product {
-        padding-bottom: 65px !important;
-    }
-
-    .products #ps-btn {
-        top: 180px !important;
-    }
-
-    .product .p-section-1,
-    .product .p-section-2,
-    .product .p-section-3 {
-        margin-top: 0px !important;
-        margin-right: 650px !important;
-        width: 620px !important;
-    }
-
-    .product .p-section-1 img,
-    .product .p-section-2 img,
-    .product .p-section-3 img {
-        padding-bottom: 60px !important;
-        padding-top: 0px !important;
-        width: 180px !important;
-    }
-
-    .product .p-section-1 .p-img,
-    .product .p-section-2 .p-img,
-    .product .p-section-3 .p-img {
-        margin: 0px !important;
-        height: 150px !important;
-        width: 200px !important;
-    }
-
-    .product .p-section-1 .grid-product__meta,
-    .product .p-section-2 .grid-product__meta,
-    .product .p-section-3 .grid-product__meta {
-        height: 150px !important;
-        width: 180px !important;
-    }
-    .products #ps-btn 
-    {
-        top: 160px !important;
-    }
-    #ps-btn button 
-    {
-        padding: 10px !important;
-    }
-    .product .p-section-1 #p-img2
-    {
-        margin-right: 20px !important;
-    }
+    
     .location
     {
         top: 200% !important;
@@ -2890,56 +2642,7 @@
     {
         top: 203% !important;
     }
-    .product .p-section-1 #p-img2 {
-        margin-right: 90px !important;
-    }
-    .products .product {
-        padding-bottom: 65px !important;
-    }
-
-    .products #ps-btn {
-        top: 180px !important;
-    }
-
-    .product .p-section-1,
-    .product .p-section-2,
-    .product .p-section-3 {
-        margin-top: 0px !important;
-        margin-right: 650px !important;
-        width: 620px !important;
-    }
-
-    .product .p-section-1 img,
-    .product .p-section-2 img,
-    .product .p-section-3 img {
-        padding-bottom: 60px !important;
-        padding-top: 0px !important;
-        width: 120px !important;
-    }
-
-    .product .p-section-1 .p-img,
-    .product .p-section-2 .p-img,
-    .product .p-section-3 .p-img {
-        margin: 0px !important;
-        height: 120px !important;
-        width: 140px !important;
-    }
-
-    .product .p-section-1 .grid-product__meta,
-    .product .p-section-2 .grid-product__meta,
-    .product .p-section-3 .grid-product__meta {
-        height: 150px !important;
-        width: 120px !important;
-    }
-    .products #ps-btn 
-    {
-        padding-left: 10px !important;
-        top: 135px !important;
-    }
-    #ps-btn button 
-    {
-        padding: 10px !important;
-    }
+   
     .location {
         top: 210% !important;
     }
@@ -3139,56 +2842,7 @@
     {
         top: 203% !important;
     }
-    .product .p-section-1 #p-img2 {
-        margin-right: 40px !important;
-    }
-    .products .product {
-        padding-bottom: 65px !important;
-    }
-
-    .products #ps-btn {
-        top: 180px !important;
-    }
-
-    .product .p-section-1,
-    .product .p-section-2,
-    .product .p-section-3 {
-        margin-top: 0px !important;
-        margin-right: 650px !important;
-        width: 620px !important;
-    }
-
-    .product .p-section-1 img,
-    .product .p-section-2 img,
-    .product .p-section-3 img {
-        padding-bottom: 60px !important;
-        padding-top: 0px !important;
-        width: 120px !important;
-    }
-
-    .product .p-section-1 .p-img,
-    .product .p-section-2 .p-img,
-    .product .p-section-3 .p-img {
-        margin: 0px !important;
-        height: 120px !important;
-        width: 140px !important;
-    }
-
-    .product .p-section-1 .grid-product__meta,
-    .product .p-section-2 .grid-product__meta,
-    .product .p-section-3 .grid-product__meta {
-        height: 150px !important;
-        width: 120px !important;
-    }
-    .products #ps-btn 
-    {
-        padding-left: 10px !important;
-        top: 135px !important;
-    }
-    #ps-btn button 
-    {
-        padding: 10px !important;
-    }
+   
     .location {
         top: 210% !important;
     }
@@ -3362,57 +3016,7 @@
         top: 203% !important;
     }
 
-    .products .product {
-        padding-bottom: 65px !important;
-    }
-
-    .products #ps-btn {
-        top: 180px !important;
-    }
-
-    .product .p-section-1,
-    .product .p-section-2,
-    .product .p-section-3 {
-        margin-top: 0px !important;
-        margin-right: 650px !important;
-        width: 620px !important;
-    }
-
-    .product .p-section-1 img,
-    .product .p-section-2 img,
-    .product .p-section-3 img {
-        padding-bottom: 60px !important;
-        padding-top: 0px !important;
-        width: 120px !important;
-    }
-
-    .product .p-section-1 .p-img,
-    .product .p-section-2 .p-img,
-    .product .p-section-3 .p-img {
-        margin: 0px !important;
-        height: 120px !important;
-        width: 140px !important;
-    }
-
-    .product .p-section-1 .grid-product__meta,
-    .product .p-section-2 .grid-product__meta,
-    .product .p-section-3 .grid-product__meta {
-        height: 150px !important;
-        width: 110px !important;
-    }
-    .products #ps-btn 
-    {
-        padding-left: 10px !important;
-        top: 135px !important;
-    }
-    #ps-btn button 
-    {
-        padding: 10px !important;
-    }
-    .product .p-section-1 #p-img2
-    {
-        margin-right: 30px !important;
-    }
+   
     .location {
         top: 210% !important;
     }
@@ -3543,9 +3147,7 @@
     .product>#div {
         padding: 0px 50px 0px 25px !important;
     }
-    .product .p-section-1 #p-img2 {
-        margin-right: 10px !important;
-    }
+   
     .location
     {
         top: 230% !important;
