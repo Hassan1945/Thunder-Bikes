@@ -1467,10 +1467,9 @@ body
 .slide-t img {
     opacity: 0;
     transform: scale(1.06);
-    top: 2.7%;
     width: 100%;
     position: absolute;
-    height: 94.5%;
+    height: 100%;
 }
 
 #line {
@@ -1929,8 +1928,9 @@ body
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1000 !important;
+    object-fit: COVER;
     display: flex !important;
-    background-image: url(img/map/5120-map.png) !important;
+    background-image: url(img/map/1280-map.png) !important;
 }
 
 .location .inner {

@@ -544,7 +544,7 @@
 
 
         <div class="slider">
-            <ul id="slides">
+            <ul style="position: absolute !important; height: 900px !important;" id="slides">
                 
                 <li>
                     <img id="slide" class="s-pic slide-1" src="img/slide-1.jpeg" alt="">
@@ -565,13 +565,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slide">
-                            <div id="line-s"></div>
-                        </div>
                     </div>
                 </li>
                 <li>
-                    <img loading="lazy" id="slide" class="slide-2" src="img/pic.jpeg.jpg" alt="">
+                    <img loading="lazy" style="object-fit: cover !important; height: 100% !important; margin-top: 0% !important;" id="slide" class="slide-2" src="img/pic.jpeg.jpg" alt="">
                     <div id="hero-hero-2" style="visibility: hidden;" class="hero__text-content vertical-center horizontal-center">
                         <h2 class="h1 hero__title">
                             <div class="animation-cropper">
@@ -589,14 +586,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slide">
-                            <div id="line-s"></div>
-                        </div>
+                        
                     </div>
                 </li>
             </ul>
 
-
+            <div style="transform: translateY(460px); z-index: 1 !important; margin: 0px !important;height: 100% !important; display: block !important; position: relative !important;" class="slide">
+                <div style="position: absolute !important;top: 0px !important;" id="line-s"></div>
+            </div>
 
             <div class="loader-wrapper">
                 <span style="z-index: 0;" id="load-line">
@@ -604,6 +601,7 @@
                 </span>
             </div>
         </div>
+
         <div class="slider-btn">
             <button class="s-button">
                 <img id="s-1" class="s " src="img/arrow/left.svg" alt="">
@@ -615,8 +613,6 @@
 
     </div>
     <!-- HEADER-COMPLETE -->
-
-
 
 
 
@@ -1319,7 +1315,7 @@
         
 
         <div class="products">
-            <iframe style=" font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback); background-color: #fff; margin: auto;  width: 100%; z-index: 10000; position: relative !important; overflow: visible;" src="carousel.html" frameborder="0"></iframe>
+            <iframe style="height: 400px; font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback); background-color: #fff; margin: auto;  width: 100%; z-index: 10000; position: relative !important; overflow: visible;" src="carousel.html" frameborder="0"></iframe>
             <p class="text-center">
                 <a href="/collections/newest-products" class="btn">View all</a>
               </p>
